@@ -6,15 +6,15 @@ Source code, writeups and exps in HECTF2017.
 
 ## web
 
-| 题目            | url  |
-| ------------- | ---- |
-| whose blog!   |      |
-| PIC or PHP?   |      |
-| phone tip!    |      |
-| alert(1)      |      |
-| Login!        |      |
-| include flag! |      |
-| who is admin  |      |
+| 题目            | url                                      |
+| ------------- | ---------------------------------------- |
+| whose blog!   |                                          |
+| PIC or PHP?   | https://github.com/HECTF/write-ups-2017/tree/master/web/PIC%20or%20PHP |
+| phone tip!    | https://github.com/HECTF/write-ups-2017/tree/master/web/phone%20tip |
+| alert(1)      | https://github.com/HECTF/write-ups-2017/tree/master/web/alert(1) |
+| Login!        |                                          |
+| include flag! | https://github.com/HECTF/write-ups-2017/tree/master/web/include%20flag! |
+| who is admin  |                                          |
 
 ## misc
 

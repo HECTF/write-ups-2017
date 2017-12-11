@@ -1,16 +1,23 @@
 # include flag! 题目解析
 
 > **题目名称**：include flag!
+>
 > **题目内容**：so ,try to include it ?
+>
 > **题目考点**：文件包含及php伪协议
+>
 > **命题人**：丶诺熙
 
 ## 出题思路
 
 一道基础的文件包含题目。文件包含也算是一个比较有意思的漏洞吧，CTF比赛中也经常会拿出来考。
+
 但是，实战中暂时还没有见到过，比较可惜。
+
 本题主要考察了php伪协议读源码，没有涉及shell的部分。
+
 因为怕大家不了解，给的提示也都很明显。最后自己有点没hold住手，甚至连源码都给了。
+
 我的错。
 
 ## 解题思路
@@ -27,7 +34,10 @@
 
 然后利用伪协议，读源码即可。
 
-最终的payload为`http://xxxx.com/?page=php://filter/read=convert.base64-encode/resource=flag.php`
+最终的payload为
+
+`http://xxxx.com/?page=php://filter/read=convert.base64-encode/resource=flag.php`
+
 然后解密读到的base64代码，的到源码，flag就在源码中
 
 ![图片](../../img/web13.png)

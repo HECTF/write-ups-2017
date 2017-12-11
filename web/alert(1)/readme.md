@@ -1,19 +1,29 @@
 # alert(1) 题目解析
 
 > **题目名称**：alert(1)
+>
 > **题目内容**：这是一道简单的xss题。使用alert弹个窗你就赢了，很简单吧？
+>
 > **题目考点**：xss基础payload构造
+>
 > **命题人**：丶诺熙
 
 ## 出题思路
 一开始想出一个xss，想了又想，就出个简单的吧。（其实是因为自己水平不够）
+
 然后就出了这个题。一开始想的出两道xss，另一道是打admin的cookie，最后自己死在了bot上。
+
 再加上出题任务繁重，于是就剩这一道题了。
 
+
 感觉仅仅是个那种的基础页面，有点不好玩，于是就想到了，自己手头还有个腾讯的头像api。然后就加了上去。
+
 `http://qlogo4.store.qq.com/qzone/123456/'.$_POST['echo'].'/100`
+
 做了一个查询头像的页面。
+
 至于alert那里，自己直接将alert重写了一下，然后进行普通的加密。
+
 ```
 window.alert = function(a) {
     document['getElementsByTagName']('p')[0]['innerHTML'] = 'flag{9uot3s_iz_imp0r7ant}';
@@ -29,12 +39,16 @@ window.alert = function(a) {
 ### XSS
 
 通过普通的xss方式。
+
 分析页面，会发现你输入的东西在img标签那里。经过测试后，发现这里是可控的，后端没有进行任何过滤。
+
 ![Alt text](../../img/web12.png)
 
 **在这里教大家一个小技巧，要好好利用搜索，CTRL+F。直接在源代码中使用搜索，搜索输入的文本即可快速定位。实战中也会经常用到。**
 
+
 构造xss有两种方法，
+
 `<img src="images/111111111.png">`
 
 **方法一：使用onerror事件**

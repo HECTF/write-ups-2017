@@ -1,0 +1,61 @@
+form{
+	background: #fff url('./yemian.png') 0 0 no-repeat;
+	width: 440px;
+	height: 313px;
+	position: relative;
+}
+#user_area{
+	position: absolute;
+	top:88px;
+	left:122px;
+	color:#11449E;
+
+	font-size: 13px;
+	font-weight:normal;
+	font-family:Arial;
+}
+#login{
+	width:450px;
+	margin: 0 auto;
+}
+input{
+	font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+}
+label{
+	width: 50px;
+}
+#uesr{
+	padding-bottom: 20px;
+}
+#Button1{
+	background: url("./login_in.gif")  no-repeat;
+	height:20px;
+	width:58px;
+	margin: 0 4px;
+	outline-width:0;
+	border-width: 0 !important;
+	cursor: pointer;
+
+}
+#Button2{
+	background: url("./login_res.gif")  no-repeat;
+	height:20px;
+	width:58px;
+	margin: 0 4px;
+	outline-width:0;
+	border-width: 0 !important;
+	cursor: pointer;
+
+}
+body{
+	background:  url("login_bg.jpg") 0 0 repeat-x;
+	padding-top: 20px;
+}
+#wifi{
+	   font-family: arial, 'Microsoft Yahei', '微软雅黑';
+	   font-size: 25px;
+	   color:#2D66AB;
+	   font-weight: bold;
+}
